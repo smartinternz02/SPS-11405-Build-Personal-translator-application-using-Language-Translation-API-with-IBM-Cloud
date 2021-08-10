@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Language Translator Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+
+    <li class="nav-item">
+      <h1 class="pta" style="font-family:Courier New"><b>Personal Translator API</b></h1>
+    </li>
+  </ul>
+</nav>
+<br>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/03.jpg" alt="Languages">
+    </div>
+    <div class="carousel-item">
+      <img src="static/04.jpg" alt="Language Trasnslator">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></san>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+<style>
+  .carousel-inner img {
+    align: center;
+    width: 30%;
+    height:10%;
+  }
+  .pta{
+  color:#ffffff;
+  }
+  </style>
+<form action="/translator" method="post" id="translate">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1>Language Translator</h1>
+    <p>Translation Studies is a field of study that deals with the theory, description, and application of translation. Because it examines translation both as an interlingual transfer, and as an intercultural communication, Translation Studies can also be described as an inter-discipline which touches on other diverse fields of knowledge, including comparative literature, cultural studies, gender studies, computer science, history, linguistics, philosophy, rhetoric, and semiotics..Translation enables effective communication between people around the world. It is a courier for the transmission of knowledge, a protector of cultural heritage, and essential to the development of a global economy. Highly skilled translators are key. Translation Studies helps practitioners develop those skills.</p>
+    <button type="submit" class="btn btn-primary"  name="translate" id="translate">Translate</button>
+  </div>
+</div>
+</form>
+
+</body>
+
+
+
+
+</html>
